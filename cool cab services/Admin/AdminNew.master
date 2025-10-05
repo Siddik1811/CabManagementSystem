@@ -1,0 +1,46 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminNew.master.cs" Inherits="Admin_AdminNew" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    
+     <link href="../Includes/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../Includes/rfnet.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="../Includes/datetimepicker.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; position: static;
+            height: 100%">
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_01.gif'); height: 100px;" width="1000"
+                    align="right" valign="bottom">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_02.gif');" width="1000" align="center"
+                    height="26" valign="middle">
+                       
+                    </td>
+            </tr>
+            <tr>
+                <td align="right" >
+                    </td>
+            </tr>
+            <tr>
+                <td valign="top" height="470">
+                    <br />
+                    <br />
+                    <br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_04.gif');" width="1000" height="26">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

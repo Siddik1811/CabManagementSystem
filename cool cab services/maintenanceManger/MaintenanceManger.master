@@ -1,0 +1,96 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MaintenanceManger.master.cs"
+    Inherits="maintenanceManger_MaintenanceManger" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="../Includes/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../Includes/rfnet.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript" src="../Includes/datetimepicker.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; position: static;
+            height: 100%">
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_01.gif');" width="1000" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_02.gif');" width="1000" align="center"
+                    height="26" valign="bottom">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Style="position: static"
+                        Width="930px" BackColor="#E0E0E0" DynamicHorizontalOffset="2" Font-Names="Arial"
+                        Font-Size="9pt" ForeColor="#0000C0" StaticSubMenuIndent="10px" Font-Bold="True">
+                        <Items>
+                            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/maintenanceManger/WelComeMaintenancePage.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="DriverDetails" Value="New Item">
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/DriverDetails.aspx" Text="Add DriverDetails"
+                                    Value="Add DriverDetails"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/ViewDriverDetails.aspx" Text="ViewDriverDetails"
+                                    Value="ViewDriverDetails"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="VendorDetails" Value="VendorDetails">
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/VenderDetails.aspx" Text="AddVendorDetails"
+                                    Value="AddVendorDetails"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/ViewVendordetails.aspx" Text="View VendorDetails"
+                                    Value="View VendorDetails"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="VehicleDetails" Value="VehicleDetails">
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/Vehicledetails.aspx" Text="AddVehicleDetails"
+                                    Value="AddVehicleDetails"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/ViewVehicleDetails.aspx" Text="ViewVehicleDetails"
+                                    Value="ViewVehicleDetails"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="SparepartDetails" Value="SparepartDetails">
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/SparePartsDetails.aspx" Text="AddSparePart Details"
+                                    Value="AddSparePart Details"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/ViewSparePartDetails.aspx" Text="View SparePartDetails"
+                                    Value="View SparePartDetails"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/PrintSparepart.aspx" Text="PrintSparePartDetails"
+                                    Value="PrintSparePartDetails"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="SparePartBilling" Value="SparePartBilling">
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/SparePartsBilling.aspx" Text="Create SparePartBilling"
+                                    Value="Create SparePartBilling"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/maintenanceManger/ViewSparePartBilling.aspx" Text="View SparePartBilling"
+                                    Value="View SparePartBilling"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/maintenanceManger/ChangePassword.aspx" Text="Changepassword"
+                                Value="Changepassword"></asp:MenuItem>
+                        </Items>
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="height: 12px">
+                    <asp:LinkButton ID="LinkButton1" runat="server"  Font-Bold="True" Font-Names="Arial" Font-Size="9pt" Font-Underline="False" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" height="470">
+                    <br />
+                    <br />
+                    <br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_04.gif');" width="1000" height="20">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

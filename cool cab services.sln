@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "E:\...\cool cab services\", ".", "{9BD12CC0-ADEB-432A-80A4-B69D3CB17537}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/cool cab services"
+		Debug.AspNetCompiler.PhysicalPath = "E:\tiprojects\Cool Cab Services\cool cab services\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\cool cab services\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/cool cab services"
+		Release.AspNetCompiler.PhysicalPath = "E:\tiprojects\Cool Cab Services\cool cab services\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\cool cab services\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1272"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BD12CC0-ADEB-432A-80A4-B69D3CB17537}.Debug|.NET.ActiveCfg = Debug|.NET
+		{9BD12CC0-ADEB-432A-80A4-B69D3CB17537}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

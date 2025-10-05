@@ -1,0 +1,138 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainPage.master.cs" Inherits="Admin_MainPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table id="Table_01" width="1001" height="601" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="9">
+                        <img src="imagess/MainPage_01.gif" width="1000" height="113" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="8" align="center" valign="middle" style="background-image: url(imagess/MainPage_02.gif);"
+                        height="26px" width="1000">
+                        <asp:Label ID="Label1" runat="server" Text="Welcome to Adminstrator" Font-Bold="True"
+                            Font-Names="Arial" Font-Size="12pt" ForeColor="Desktop"></asp:Label>
+                    </td>
+                    <td align="left" style="background-image: url(imagess/MainPage_02.gif);">
+                        <asp:LinkButton ID="lnkbtnLogout" runat="server" Style="position: static" Font-Bold="True" Font-Names="Arial" Font-Size="9pt" Font-Underline="False" ForeColor="Desktop" OnClick="lnkbtnLogout_Click">Logout</asp:LinkButton></td>
+                </tr>
+                <tr>
+                    <td colspan="9">
+                        <img src="imagess/MainPage_03.gif" width="1000" height="57" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="57" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">
+                        <img src="imagess/MainPage_04.gif" width="196" height="131" alt=""></td>
+                    <td colspan="2">
+                        <a href="ManagerNewCreation.aspx">
+                            <img src="imagess/MainPage_05.gif" alt="" width="184" height="37" border="0"></a></td>
+                    <td rowspan="7">
+                        <img src="imagess/MainPage_06.gif" width="243" height="378" alt=""></td>
+                    <td colspan="2">
+                        <a href="../HRManger/HRManger.aspx">
+                            <img src="imagess/MainPage_07.gif" alt="" width="185" height="37" border="0"></a></td>
+                    <td colspan="2" rowspan="2">
+                        <img src="imagess/MainPage_08.gif" width="192" height="131" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="37" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="imagess/MainPage_09.gif" width="184" height="94" alt=""></td>
+                    <td colspan="2">
+                        <img src="imagess/MainPage_10.gif" width="185" height="94" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="94" alt=""></td>
+                </tr>
+                <tr>
+                    <td rowspan="5">
+                    </td>
+                    <td colspan="2">
+                        <a href="../maintenanceManger/WelComeMaintenancePage.aspx">
+                            <img src="imagess/MainPage_12.gif" alt="" width="172" height="36" border="0"></a></td>
+                    <td rowspan="2">
+                        <img src="imagess/MainPage_13.gif" width="55" height="141" alt=""></td>
+                    <td rowspan="2">
+                        <img src="imagess/MainPage_14.gif" width="56" height="141" alt=""></td>
+                    <td colspan="2">
+                        <a href="../MovementHomePage/MovementHomePage.aspx">
+                            <img src="imagess/MainPage_15.gif" alt="" width="168" height="36" border="0"></a></td>
+                    <td rowspan="5">
+                        <img src="imagess/MainPage_16.gif" width="153" height="247" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="36" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="imagess/MainPage_17.gif" width="172" height="105" alt=""></td>
+                    <td colspan="2">
+                        <img src="imagess/MainPage_18.gif" width="168" height="105" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="105" alt=""></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="imagess/MainPage_19.gif" width="43" height="106" alt=""></td>
+                    <td colspan="2">
+                        <a href="../FinancialHomePage/WelcomePage.aspx">
+                            <img src="imagess/MainPage_20.gif" alt="" width="184" height="35" border="0"></a></td>
+                    <td colspan="2" rowspan="2">
+                        <a href="../QulityAssranceManger/WelComepage.aspx">
+                            <img src="imagess/MainPage_21.gif" alt="" width="185" height="52" border="0"></a></td>
+                    <td rowspan="3">
+                        <img src="imagess/MainPage_22.gif" width="39" height="106" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="35" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">
+                        <img src="imagess/MainPage_23.gif" width="184" height="71" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="17" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="imagess/MainPage_24.gif" width="185" height="54" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="54" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="9">
+                        <img src="imagess/MainPage_25.gif" width="1000" height="26" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="1" height="26" alt=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="imagess/spacer.gif" width="153" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="43" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="129" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="55" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="243" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="56" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="129" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="39" height="1" alt=""></td>
+                    <td>
+                        <img src="imagess/spacer.gif" width="153" height="1" alt=""></td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

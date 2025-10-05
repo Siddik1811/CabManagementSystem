@@ -1,0 +1,57 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="HomePage.master.cs" Inherits="Admin_HomePage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+    <link href="../Includes/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../Includes/rfnet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            &nbsp;
+            <table id="Table_01" width="1000" height="600" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td colspan="4">
+                        <img src="images/HomePage_01.gif" width="1000" height="113" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <img src="images/HomePage_02.gif" width="1000" height="25" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <img src="images/HomePage_03.gif" width="1000" height="17" alt=""></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">
+                        <img src="images/HomePage_04.gif" width="20" height="420" alt=""></td>
+                    <td>
+                        <img src="images/HomePage_05.gif" width="678" height="248" alt=""></td>
+                    <td style="background-image: url('images/HomePage_06.gif');" width="278" height="248"">
+                        <%--<img src="images/HomePage_06.gif" width="278" height="248" alt="">--%>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td rowspan="3">
+                        <img src="images/HomePage_07.gif" width="24" height="420" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/HomePage_08.gif" width="956" height="158" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/HomePage_09.gif" width="956" height="14" alt=""></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <img src="images/HomePage_10.gif" width="1000" height="25" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

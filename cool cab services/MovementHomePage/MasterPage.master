@@ -1,0 +1,95 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MovementHomePage_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="../Includes/styles.css" rel="stylesheet" type="text/css" />
+    <link href="../Includes/rfnet.css" rel="stylesheet" type="text/css" />
+
+    <script language="javascript" type="text/javascript" src="../Includes/datetimepicker.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; position: static;
+            height: 100%">
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_01.gif');" width="1000" height="100">
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_02.gif');" width="1000" align="center"
+                    height="26" valign="middle">
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Style="position: static"
+                        Width="944px" BackColor="#E0E0E0" DynamicHorizontalOffset="2" Font-Names="Arial"
+                        Font-Size="9pt" ForeColor="#0000C0" StaticSubMenuIndent="10px" Font-Bold="True">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/MovementHomePage/MovementHomePage.aspx" Text="Home"
+                                Value="Home"></asp:MenuItem>
+                            <asp:MenuItem Text="DriverShiftDetails" Value="DriverShiftDetails">
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/DriverShiftDetails.aspx" Text="Add DriverShiftDetails"
+                                    Value="Add DriverShiftDetails"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/ViewDriverShiftDetails.aspx" Text="View DriverShiftDetails"
+                                    Value="View DriverShiftDetails"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="RouteDetails" Value="RouteDetails">
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/RouteDetails.aspx" Text="Add RouteDetails"
+                                    Value="Add RouteDetails"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/ViewRouteDetails.aspx" Text="View RouteDetails"
+                                    Value="View RouteDetails"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/MovementHomePage/RouteSearch.aspx" Text="Route Search"
+                                Value="Route Search"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/MovementHomePage/SearchShiftID.aspx" Text="Shift Search"
+                                Value="Shift Search"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/MovementHomePage/VehicleSearch.aspx" Text="Vehicle Search"
+                                Value="Vehicle Search"></asp:MenuItem>
+                            <asp:MenuItem Text="Vehicle Allocation" Value="Vehicle Allocation">
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/VehicleAllocationDetails.aspx" Text="Add Allocation"
+                                    Value="Add Allocation"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/ViewVehicleAllocation.aspx" Text="View Vehicle Allocation"
+                                    Value="View Vehicle Allocation"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/PrintVehicleDetail.aspx" Text="PrintVehicle Details"
+                                    Value="PrintVehicle Details"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="TripSheet" Value="TripSheet">
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/TripSheet.aspx" Text="Add TripSheet"
+                                    Value="Add TripSheet"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/MovementHomePage/ViewTripSheet.aspx" Text="View TripSheet "
+                                    Value="View TripSheet "></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/AdminLogin.aspx" Text="ChangePassword" Value="ChangePassword">
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="9pt" Font-Underline="False" OnClick="LinkButton1_Click">Logout</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" height="470">
+                    <br />
+                    <br />
+                    <br />
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="background-image: url('ImgNew/MasterPlane_04.gif');" width="1000" height="26">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
